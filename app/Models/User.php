@@ -25,6 +25,8 @@ class User extends Authenticatable
         'status',
         'is_locked',
         'login_tries',
+        'role',
+        'agent_id',
     ];
 
     /**

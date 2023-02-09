@@ -1,0 +1,14 @@
+# Query: bg-login-image
+# Including: ./public/css
+# ContextLines: 1
+
+2 results - 2 files
+
+public\css\sb-admin-2.css:
+  10862  
+  10863: .bg-login-image {
+  10864    background: url("https://media.istockphoto.com/id/1368151370/photo/user-typing-login-and-password-cyber-security-concept.jpg?b=1&s=170667a&w=0&k=20&c=wm6YUMs03Bup4_9XcQaX61L711qJxAUExEJp_PWO8gI=");
+
+public\css\sb-admin-2.min.css:
+   9   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  10: ⟪ 164291 characters skipped ⟫eight:10rem;width:100%}@media (min-width:768px){.chart-bar{height:20rem}}.chart-pie{position:relative;height:15rem;width:100%}@media (min-width:768px){.chart-pie{height:calc(20rem - 43px)!important}}.bg-login-image{background:url(https://media.istockphoto.com/id/1368151370/photo/user-typing-login-and-password-cyber-security-concept.jpg?b=1&s=170667a&w=0&k=20&c=wm6YUMs03Bup4_9XcQaX61L711qJxAUExEJp_PWO8gI);background-position:center;background-size:cover}.bg-register-image{background:url(https://source.unsplash.com/Mv9hjnEUHR4/600x800);background-position:center;background-size:cover}.bg-password-image{background:url(https://source.unsplash.com/oWTW-jNGl9I/600x800);background-position:center;background-size:cover}form.user .custom-checkbox.small label{line-height:1.5rem}form.user .form-control-user{font-size:.8rem;border-radius:10rem;padding:1.5rem 1rem}form.user .btn-user{font-size:.8rem;border-radius:10rem;padding:.75rem 1rem}.btn-google{color:#fff;background-color:#ea4335;border-color:#fff}.btn-google:hover{color:#fff;background-color:#e12717;border-color:#e6e6e6}.btn-google.focus,.btn-google:focus{color:#fff;background-color:#e12717;border-color:#e6e6e6;box-shadow:0 0 0 .2rem rgba(255,255,255,.5)}.btn-google.disabled,.btn-google:disabled{color:#fff;background-color:#ea4335;border-color:#fff}.btn-google:not

@@ -22,6 +22,8 @@ class CreateUsersTable extends Migration
             $table->string('status');
             $table->string('is_locked');
             $table->string('login_tries');
+            $table->string('role');
+            $table->string('agent_id');
             $table->rememberToken();
             $table->timestamps();
         });
