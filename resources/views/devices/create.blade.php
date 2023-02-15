@@ -16,9 +16,16 @@
     @endif
       <form method="post" action="{{route('device.store')}}">
           @csrf
+
+          
+          <div class="form-group">
+            <label>Merchant Name: {{$agent->firstname}}</label>
+            <input type="hidden" class="form-control" name="agent_id" value="{{$agent->id}}"/>
+        </div><br>
+        
           <div class="form-group">    
-              <label for="ime">ime:</label>
-              <input type="number" class="form-control" name="ime"/>
+              <label for="imei">imei:</label>
+              <input type="number" class="form-control" name="imei"/>
           </div>
 
           <div class="form-group">
@@ -39,10 +46,6 @@
               <input type="hidden" class="form-control" name="agent_id"/>
           </div> --}}
 
-          {{-- <div class="form-group">
-            <label>Merchant Name: {{$merchant->name}}</label>
-            <input type="hidden" class="form-control" name="agent_id" value="{{$merchant->id}}"/>
-        </div> --}}
 
           <div class="form-group">
               <label for="terminal_id">Terminal id:</label>

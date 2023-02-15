@@ -43,5 +43,5 @@ Route::post('/merchant-store', [App\Http\Controllers\MerchantController::class, 
 
 //Devices
 Route::get('/devices', [App\Http\Controllers\DeviceController::class, 'index'])->name('device.index');
-Route::get('/device-create', [App\Http\Controllers\DeviceController::class, 'create'])->name('devices.create');
+Route::get('/device-create/{id}', [App\Http\Controllers\DeviceController::class, 'create'])->name('devices.create');
 Route::post('/device-store', [App\Http\Controllers\DeviceController::class, 'store'])->name('device.store');

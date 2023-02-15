@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>Pay263_ui</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -65,7 +66,7 @@
 
                <!-- Heading -->
                <div class="sidebar-heading">
-                   Interface
+                   menu bar
                </div>
    
                <!-- Nav Item - Pages Collapse Menu -->

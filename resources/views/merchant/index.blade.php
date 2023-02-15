@@ -41,7 +41,7 @@
                         </td> --}}
                       
                         <td>
-                            <a href="{{route('devices.create',$agent->id)}}" class="btn btn-primary">Add device</a>
+                            <a href="/device-create/{{$agent['id']}}" <i class="fa fa-edit"</i></a>
                         </td>
 
                 </tbody>

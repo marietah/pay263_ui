@@ -22,9 +22,9 @@
             <thead>
             <tr>
         
-                <th>Ime</th>
+                <th>Imei</th>
                 <th>status</th>
-                <th>name</th>
+                {{-- <th>name</th> --}}
                 <th>pos sim number</th>
                 <th>Merchant id</th>
                 <th>terminal id</th>
@@ -36,7 +36,7 @@
                 <tbody>
                     @foreach($devices as $device)
                     <tr>
-                        <td>{{$device->ime}}</td>
+                        <td>{{$device->imei}}</td>
                         <td>{{$device->status}}</td>
                         <td>{{$device->pos_sim_number}}</td>
                         <td>{{$device->merchant_id}}</td>
