@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\MerchantController;
 use App\Http\Controllers\DeviceController;
+use App\Http\Controllers\TransactionController;
 
 
 
@@ -45,3 +46,9 @@ Route::post('/merchant-store', [App\Http\Controllers\MerchantController::class, 
 Route::get('/devices', [App\Http\Controllers\DeviceController::class, 'index'])->name('device.index');
 Route::get('/device-create/{id}', [App\Http\Controllers\DeviceController::class, 'create'])->name('devices.create');
 Route::post('/device-store', [App\Http\Controllers\DeviceController::class, 'store'])->name('device.store');
+
+//Transaction
+Route::get('/transactions', [App\Http\Controllers\TransactionController::class, 'index'])->name('transactions.index');
+Route::get('/filter-transactions', [App\Http\Controllers\TransactionController::class, 'filterbyDate'])->name('transactions.filter');
+Route::get('/merchant-transactions/{id}', [App\Http\Controllers\TransactionController::class, 'viewById'])->name('merchant.transactions');
+

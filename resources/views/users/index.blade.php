@@ -32,7 +32,7 @@
                         <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
                         <td>
-                            <a href="{{ route('users.edit',$user->id)}}" class="btn btn-primary">Edit</a>
+                            <a href="{{ route('users.edit',$user->id)}}" <i class="fa-light fa-pencil"></i></a>
                         </td>
                       
 

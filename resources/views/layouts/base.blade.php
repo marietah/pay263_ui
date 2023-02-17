@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <!-- Custom fonts for this template-->
-    <link href="{{asset("assets/vendor/fontawesome-free/css/all.min.css")}} rel="stylesheet" type="text/css">
+    <link href="{{asset("assets/vendor/fontawesome-free/css/all.min.css")}}" rel="stylesheet" type="text/css">
     
        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -46,7 +46,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                    <i class="fas fa-donate"></i>
                 </div>
                 <div class="sidebar-brand-text mx-3">Pay_263 </div>
             </a>
@@ -73,7 +73,8 @@
                <li class="nav-item">
                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                        aria-expanded="true" aria-controls="collapseTwo">
-                       <i class="fas fa-fw fa-cog"></i>
+                       <i class="fas fa-store"></i>
+                       {{-- <i class="fas fa-fw fa-cog"></i> --}}
                        <span>Merchants</span>
                    </a>
                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -84,15 +85,18 @@
                        </div>
                    </div>
                </li>
+               <br>
    
                <!-- Nav Item - Utilities Collapse Menu -->
                <li class="nav-item">
-                   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                       aria-expanded="true" aria-controls="collapseUtilities">
-                       <i class="fas fa-fw fa-wrench"></i>
+                   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDevices"
+                       aria-expanded="true" aria-controls="collapseDevices">
+                       <i class="	fas fa-mobile-alt"></i>
+                       {{-- <i class="fa-solid fa-watch-calculator"></i> --}}
+                       {{-- <i class="fas fa-fw fa-wrench"></i> --}}
                        <span>Devices</span>
                    </a>
-                   <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                   <div id="collapseDevices" class="collapse" aria-labelledby="headingUtilities"
                        data-parent="#accordionSidebar">
                        <div class="bg-white py-2 collapse-inner rounded">
                            {{-- <h6 class="collapse-header">Custom Utilities:</h6> --}}
@@ -103,12 +107,35 @@
                        </div>
                    </div>
                </li>
+               <br>
+
+               <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    {{-- <i class="fas fa-fw fa-wrench"></i> --}}
+                    {{-- <i class="fa-solid fa-dollar-sign"></i> --}}
+                    <i class="fa fa-credit-card"></i>
+                    <span>Transactions</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        {{-- <h6 class="collapse-header">Custom Utilities:</h6> --}}
+                        <a class="collapse-item" href="{{route('transactions.index')}}">View Transactions</a>
+                        {{-- <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a> --}}
+                    </div>
+                </div>
+            </li>
+            <br>
                
                  <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
+                    {{-- <i class="fas fa-fw fa-folder"></i> --}}
+                    <i class="fa fa-users" aria-hidden="true"></i>
                     <span>Users</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
@@ -350,7 +377,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <!-- Topbar Search -->
+                    {{-- <!-- Topbar Search -->
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
@@ -362,7 +389,7 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form> --}}
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -391,16 +418,16 @@
                             </div>
                         </li>
 
-                        <!-- Nav Item - Alerts -->
+                        {{-- <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
                                 <!-- Counter - Alerts -->
                                 <span class="badge badge-danger badge-counter">3+</span>
-                            </a>
+                            </a> --}}
                             <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                            {{-- <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="alertsDropdown">
                                 <h6 class="dropdown-header">
                                     Alerts Center
@@ -414,8 +441,8 @@
                                     <div>
                                         <div class="small text-gray-500">December 12, 2019</div>
                                         <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                                    </div>
-                                </a>
+                                    </div> --}}
+                                {{-- </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
                                         <div class="icon-circle bg-success">
@@ -426,8 +453,8 @@
                                         <div class="small text-gray-500">December 7, 2019</div>
                                         $290.29 has been deposited into your account!
                                     </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                </a> --}}
+                                {{-- <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
                                         <div class="icon-circle bg-warning">
                                             <i class="fas fa-exclamation-triangle text-white"></i>
@@ -440,10 +467,10 @@
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                             </div>
-                        </li>
+                        </li> --}}
 
                         <!-- Nav Item - Messages -->
-                        <li class="nav-item dropdown no-arrow mx-1">
+                        {{-- <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-envelope fa-fw"></i>
@@ -508,7 +535,7 @@
                             </div>
                         </li>
 
-                        <div class="topbar-divider d-none d-sm-block"></div>
+                        <div class="topbar-divider d-none d-sm-block"></div> --}}
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">

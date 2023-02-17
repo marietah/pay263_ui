@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Transaction extends Model
 {
-   
+    use \Illuminate\Database\Eloquent\Factories\HasFactory;
     protected $table='transaction';
     protected $fillable=[
         'date',

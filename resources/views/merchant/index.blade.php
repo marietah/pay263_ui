@@ -40,9 +40,16 @@
                             <a href="{{ route('users.edit',$user->id)}}" class="btn btn-primary">Edit</a>
                         </td> --}}
                       
-                        <td>
+                        {{-- <td>
                             <a href="/device-create/{{$agent['id']}}" <i class="fa fa-edit"</i></a>
-                        </td>
+                        </td> --}}
+
+                        <td>
+                            <a href="/device-create/{{$agent['id']}}"  <i class="fa fa-plus" aria-hidden="true"></i></a>
+                        
+                <a href="/merchant-transactions/{{$agent['id']}}" <i class="fa fa-eye" aria-hidden="true"></i></a>
+            </td>
+                    </tr>
 
                 </tbody>
                 @endforeach
